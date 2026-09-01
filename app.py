@@ -113,12 +113,8 @@ class App:
             f.write(ligne)
 
         
-        #syurcharge
-        for _ in range(10_000_000):
-            _ * _
-            
-                        
-            
+
+               
                 
 
         self.fenetre.after(2000, self.rafraichir)
