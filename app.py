@@ -112,7 +112,7 @@ class App:
         with open("monitoring.log", 'a') as f:
             f.write(ligne)
 
-        
+        print(ligne)
 
                
                 
