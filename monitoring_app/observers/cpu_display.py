@@ -23,7 +23,7 @@ class AffichageCPU(Observateur):
         donnees_metriques = sujet.get_donnees() #Obtient donnes sujets
         donnees_cpu = donnees_metriques["cpu"]
 
-        self.label_cpu.config(text=f"{valeur:.1f}%")
+        self.label_cpu.config(text=f"{donnees_cpu:.1f}%")
 
         self._dessiner_barre(donnees_cpu)
 
@@ -45,4 +45,4 @@ class AffichageCPU(Observateur):
         else:
             couleur_cpu = "red"
         
-        self.canvas_cpu.create_rectangle(0, 0, largeur_ram, 20, fill=couleur_ram, outline="")
+        self.canvas_cpu.create_rectangle(0, 0, largeur_cpu, 20, fill=couleur_cpu, outline="")
