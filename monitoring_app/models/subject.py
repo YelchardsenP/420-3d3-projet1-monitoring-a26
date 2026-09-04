@@ -6,13 +6,15 @@ class Sujet(ABC):
         self._observateurs = []
 
     def abonner(self, observateur) -> None:
-        # À compléter
+        self._observateurs.append(observateur)
+        
 
     def desabonner(self, observateur) -> None:
-        # À compléter
+        self._observateurs.remove(observateur)
 
     def notifier(self) -> None:
-        # À compléter — quelle méthode appelle-t-on sur chaque observateur ?
+        for o in self._observateurs:
+            o.actualiser(self)
 
     @abstractmethod
     def get_donnees(self) -> dict:
