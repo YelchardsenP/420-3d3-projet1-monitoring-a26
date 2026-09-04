@@ -19,8 +19,7 @@ class MetriquesSysteme(Sujet):
         self.notifier()
 
     def get_donnees(self) -> dict:
-       #retour dictionnaire avec les 3 infos
+        #retour dictionnaire avec les 3 infos
         return { "cpu": self._cpu, 
         "ram": self._ram, 
-        "disque": self._disque
-        }
+        "disque": self._disque }
