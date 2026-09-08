@@ -1,7 +1,7 @@
 from datetime import datetime
 from observers.observer import Observateur
 
-class Logger(Observateur):
+class LoggerFichier(Observateur):
     def __init__(self):
         pass
     
@@ -32,5 +32,5 @@ class Logger(Observateur):
         with open("monitoring.log", "a") as f:
             f.write(ligne)
 
-        print(ligne)
+       
 
