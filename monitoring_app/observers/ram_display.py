@@ -5,7 +5,7 @@ class AffichageRAM(Observateur):
 
     def __init__(self, fenetre_parent: tk.Frame): #type hint
         # À compléter: Créez un LabelFrame "ram", un Label pour le pourcentage et un Canvas pour la barre de progression
-        self.frame_ram = tk.LabelFrame(fenetre_parent, text="ram", padx=10, pady=10)
+        self.frame_ram = tk.LabelFrame(fenetre_parent, text="RAM", padx=10, pady=10)
         self.frame_ram.pack(fill=tk.X, padx=10, pady=5)
         
         self.label_ram = tk.Label(self.frame_ram, text="0%", font=("Arial", 24, "bold"))

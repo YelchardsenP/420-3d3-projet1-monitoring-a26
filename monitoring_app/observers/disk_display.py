@@ -5,7 +5,7 @@ class AffichageDisque(Observateur):
 
     def __init__(self, fenetre_parent: tk.Frame): #type hint
         # À compléter: Créez un LabelFrame "disque", un Label pour le pourcentage et un Canvas pour la barre de progression
-        self.frame_disque = tk.LabelFrame(fenetre_parent, text="ram", padx=10, pady=10)
+        self.frame_disque = tk.LabelFrame(fenetre_parent, text="Disque", padx=10, pady=10)
         self.frame_disque.pack(fill=tk.X, padx=10, pady=5)
         
         self.label_disque = tk.Label(self.frame_disque, text="0%", font=("Arial", 24, "bold"))
